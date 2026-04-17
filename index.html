@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인사업자 CEO 절세 가이드</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap');
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #f1f5f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* A4 규격 설정 */
+        .a4-page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 20mm;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .header-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%);
+        }
+
+        .section-title {
+            border-left: 5px solid #2563eb;
+            padding-left: 12px;
+            font-weight: 800;
+            font-size: 1.25rem;
+            color: #1e293b;
+            margin-bottom: 1.5rem;
+        }
+
+        /* 인쇄 설정 */
+        @media print {
+            body { background: white; margin: 0; padding: 0; }
+            .a4-page { 
+                margin: 0; 
+                box-shadow: none; 
+                page-break-after: always; /* 페이지 강제 나눔 */
+            }
+            .no-print { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- [PAGE 1] 분석 및 원리 -->
+    <div class="a4-page">
+        <!-- Header -->
+        <div class="header-bg text-white p-10 rounded-3xl mb-10 relative overflow-hidden">
+            <div class="relative z-10">
+                <h4 class="text-blue-300 font-bold text-sm tracking-[0.2em] mb-2">SAMSUNG LIFE ASSET MANAGEMENT</h4>
+                <h1 class="text-4xl font-black leading-tight">
+                    개인사업자 대표님을 위한<br>
+                    <span class="text-yellow-400">절세 및 건보료 통합 리포트</span>
+                </h1>
+                <div class="w-20 h-1 bg-yellow-400 mt-6 mb-4"></div>
+                <p class="text-blue-100 text-lg opacity-90">소득은 늘었지만 실속이 없는 대표님의 고민, 이제 '비용의 자산화'가 답입니다.</p>
+            </div>
+        </div>
+
+        <!-- Section: Problem -->
+        <div class="mb-12">
+            <h3 class="section-title">01. 대한민국 개인사업자의 피할 수 없는 현실</h3>
+            <div class="grid grid-cols-2 gap-6">
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                    <p class="text-red-600 font-bold text-sm mb-2">고율의 소득세 부담</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        개인사업자 세율은 과표 1억 초과 시 <span class="font-bold">35%</span>, 10억 초과 시 <span class="font-bold">45%</span>에 달합니다. 매출이 늘수록 순이익 증가분보다 세금 증가분이 더 가파릅니다.
+                    </p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                    <p class="text-blue-600 font-bold text-sm mb-2">준조세, 건강보험료의 습격</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        소득세는 공제라도 받지만, 건보료는 소득에 정직하게 비례합니다. 과세표준이 상승하면 <span class="font-bold">건보료 + 장기요양보험료</span> 지출도 동반 상승합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Principle -->
+        <div class="mb-12">
+            <h3 class="section-title">02. 절세의 핵심 로직: 지출을 자산으로 전환</h3>
+            <div class="relative p-8 bg-blue-50 rounded-3xl border border-blue-100">
+                <div class="flex items-start mb-6">
+                    <div class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4 shrink-0">1</div>
+                    <div>
+                        <p class="font-bold text-lg text-slate-800">100% 경비 처리를 통한 과표 하락</p>
+                        <p class="text-slate-600 text-sm mt-1 leading-relaxed">단체보험료는 세법상 '복리후생비' 또는 '필요경비'로 인정되어 납입한 금액만큼 대표님의 장부상 이익을 합법적으로 낮춥니다.</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <div class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-4 shrink-0">2</div>
+                    <div>
+                        <p class="font-bold text-lg text-slate-800">이중 절감 효과 (소득세 + 건보료)</p>
+                        <p class="text-slate-600 text-sm mt-1 leading-relaxed">감소된 과세표준을 기준으로 건강보험료 등급이 재산정되므로, 소득세뿐만 아니라 건보료까지 줄어드는 효과가 발생합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer for Page 1 -->
+        <div class="absolute bottom-10 left-20 right-20 flex justify-between items-center text-slate-400 text-[10px] border-t pt-4">
+            <span>SAMSUNG LIFE INSURANCE CEO CONSULTING</span>
+            <span>1 / 2</span>
+        </div>
+    </div>
+
+    <!-- [PAGE 2] 상세 수치 및 활용 -->
+    <div class="a4-page">
+        <h3 class="section-title mt-10">03. 실질 납입 비용의 마법 (Efficiency Analysis)</h3>
+        
+        <!-- Infographic Box -->
+        <div class="bg-slate-900 text-white p-10 rounded-3xl mb-12 shadow-xl">
+            <p class="text-center text-blue-400 font-bold mb-8 uppercase tracking-widest text-sm">Case Study: 월 100만원 납입 시</p>
+            <div class="flex justify-around items-center">
+                <div class="text-center">
+                    <div class="text-slate-400 text-xs mb-2">보험료 납입</div>
+                    <div class="text-3xl font-black">100만원</div>
+                </div>
+                <div class="text-blue-500 font-black text-4xl">−</div>
+                <div class="text-center">
+                    <div class="text-blue-400 text-xs mb-2">절세 및 건보료 환급</div>
+                    <div class="text-3xl font-black text-blue-400">약 43만원</div>
+                </div>
+                <div class="text-slate-500 font-black text-4xl">=</div>
+                <div class="text-center bg-blue-600 p-6 rounded-2xl">
+                    <div class="text-blue-100 text-xs mb-2">실질 체감 비용</div>
+                    <div class="text-3xl font-black">57만원</div>
+                </div>
+            </div>
+            <div class="mt-10 bg-slate-800 p-4 rounded-xl border border-slate-700 text-center text-sm text-slate-300">
+                "납입액의 약 <span class="text-yellow-400 font-bold">43%</span>는 국가가 세금 혜택으로 대신 내주는 셈입니다."
+            </div>
+        </div>
+
+        <h3 class="section-title">04. 진단 프로세스 가이드</h3>
+        <div class="space-y-6 mb-12">
+            <div class="flex items-center p-5 bg-white border border-slate-200 rounded-2xl">
+                <div class="text-2xl font-black text-blue-100 italic mr-6 w-8">01</div>
+                <div>
+                    <p class="font-bold text-slate-800">정확한 건보료 데이터 입력</p>
+                    <p class="text-xs text-slate-500 mt-1">고지서에 기재된 '본인부담 건강보험료'를 진단기에 입력하여 과세표준을 역산합니다.</p>
+                </div>
+            </div>
+            <div class="flex items-center p-5 bg-white border border-slate-200 rounded-2xl">
+                <div class="text-2xl font-black text-blue-100 italic mr-6 w-8">02</div>
+                <div>
+                    <p class="font-bold text-slate-800">맞춤형 플랜 설계</p>
+                    <p class="text-xs text-slate-500 mt-1">사업장의 규모와 이익 수준에 맞는 최적의 보험료(월 00만원)를 제안합니다.</p>
+                </div>
+            </div>
+            <div class="flex items-center p-5 bg-white border border-slate-200 rounded-2xl">
+                <div class="text-2xl font-black text-blue-100 italic mr-6 w-8">03</div>
+                <div>
+                    <p class="font-bold text-slate-800">결과 리포트 출력 및 제안</p>
+                    <p class="text-xs text-slate-500 mt-1">생성된 리포트를 PDF로 저장하여 대표님께 신뢰감 있는 분석 자료로 전달합니다.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary Message -->
+        <div class="bg-blue-600 p-8 rounded-3xl text-white">
+            <h4 class="font-black text-xl mb-3 italic">"단순한 지출이 아니라, 내 사업장을 지키는 자산입니다."</h4>
+            <p class="text-blue-100 text-sm leading-relaxed mb-4">
+                이 진단기를 통해 산출된 결과는 대표님의 사업장이 법인 수준의 절세 혜택을 누릴 수 있는 유일한 통로가 될 것입니다. 지금 바로 진단해보십시오.
+            </p>
+            <div class="flex gap-2">
+                <span class="bg-blue-500 text-[10px] px-3 py-1 rounded-full border border-blue-400">전액 비용처리</span>
+                <span class="bg-blue-500 text-[10px] px-3 py-1 rounded-full border border-blue-400">산재 리스크 방어</span>
+                <span class="bg-blue-500 text-[10px] px-3 py-1 rounded-full border border-blue-400">건보료 연동 절감</span>
+            </div>
+        </div>
+
+        <!-- Footer for Page 2 -->
+        <div class="absolute bottom-10 left-20 right-20 flex justify-between items-center text-slate-400 text-[10px] border-t pt-4">
+            <p class="font-bold text-slate-500 italic">삼성생명 자산관리 전문가 드림</p>
+            <span>2 / 2</span>
+        </div>
+    </div>
+
+    <!-- Print Button (Only visible on screen) -->
+    <div class="fixed bottom-8 right-8 no-print">
+        <button onclick="window.print()" class="bg-slate-900 text-white px-8 py-4 rounded-2xl font-black shadow-2xl hover:scale-105 transition-all flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+            </svg>
+            2페이지 전체 인쇄하기
+        </button>
+    </div>
+
+</body>
+</html>
