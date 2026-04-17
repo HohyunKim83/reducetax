@@ -48,21 +48,38 @@
             margin-top: auto;
             margin-left: -20mm;
             margin-right: -20mm;
-            margin-bottom: -12mm; /* 하단 잘림 방지를 위해 마진 조정 */
+            margin-bottom: -12mm; 
         }
 
-        /* 인쇄 설정 */
+        /* 인쇄 설정 강제화 */
         @media print {
-            body { background: white; margin: 0; padding: 0; }
-            .a4-page { 
-                margin: 0; 
-                box-shadow: none; 
-                page-break-after: always;
-            }
-            .no-print { display: none; }
             @page {
                 size: A4;
                 margin: 0;
+            }
+            html, body {
+                width: 210mm;
+                height: 297mm;
+                background-color: white !important;
+            }
+            body * {
+                visibility: hidden;
+            }
+            /* 인쇄할 페이지만 보이도록 설정 */
+            .a4-page, .a4-page * {
+                visibility: visible;
+            }
+            .a4-page {
+                position: relative;
+                margin: 0 !important;
+                padding: 15mm 20mm !important;
+                box-shadow: none !important;
+                page-break-after: always;
+                left: 0;
+                top: 0;
+            }
+            .no-print {
+                display: none !important;
             }
         }
     </style>
